@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Authentication</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3><center>Welcome to the club!</center></h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login</button>
+
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3><center>Welcome</center></h3>
+    <button onclick="logout()">Logout</button>
+  </div>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTqPapb7CSI62Kz3Zaujx58t9c0xSwNWc",
+    authDomain: "login-auth-workshop.firebaseapp.com",
+    databaseURL: "https://login-auth-workshop.firebaseio.com",
+    projectId: "login-auth-workshop",
+    storageBucket: "login-auth-workshop.appspot.com",
+    messagingSenderId: "374071785577",
+    appId: "1:374071785577:web:4ff9910b6f1a7fca268af8",
+    measurementId: "G-J8T8XJEXE3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
